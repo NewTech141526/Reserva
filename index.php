@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>ReservaAi.com</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/Estilo.css"
     </head>
@@ -16,8 +16,7 @@ and open the template in the editor.
             <div class="conatainer">
                 
                 <div class="jumbotron"  id="jub"style="background-color:#0066CB" >
-                    <h1 id="intro">Reserva Aí</h1>
-                    
+                    <h1 id="intro">Reserva Aí</h1>              
                 </div>
                </div>
         </nav>
@@ -32,9 +31,9 @@ and open the template in the editor.
             <h5 id="login" class="card-title">Login</h5>
             <form class="form-signin"  action="verifica.php" method="post" >
             
-                <p><input type="text" id="usuario" name="login" class="form-control" style="color:white" placeholder="Digite seu Usuario" required autofocus></p>
+                <p><input type="text" id="usuario" name="login" class="form-control" style="background-color:whitesmoke" placeholder="Digite seu Usuario" required autofocus></p>
            
-                <p>   <input type="password" id="senha" name="senha" class="form-control" style="color:white" placeholder="Digite Sua Senha" required></p>
+                <p>   <input type="password" id="senha" name="senha" class="form-control" style="background-color:whitesmoke" placeholder="Digite Sua Senha" required></p>
                
               </div>
 
@@ -68,7 +67,7 @@ and open the template in the editor.
       </div>
       <div class="modal-body">
           
-        <form>
+          <form  action="verifica.php" method="POST">
   <div class="form-group">
       <label for="nome">Digite o nome da Instituição:</label>
     <input type="text" class="form-control" id="nome"  placeholder="Nome da Instituição">
@@ -91,19 +90,20 @@ and open the template in the editor.
   </div>        
   <div class="form-group">
     <label for="senha">Digite sua Senha:</label>
-    <input type="password" class="form-control" id="senhacad" placeholder="Digite a Senha">
+    <input type="password" name="senhacad" class="form-control" id="senhacad" placeholder="Digite a Senha">
   </div> 
   <div class="form-group">
     <label for="conf_senha">Confirme sua Senha:</label>
-    <input type="password" class="form-control" id="senhacad" placeholder="Confirme a Senha">
-  </div>           
-        </form> 
-          
+    <input type="password" class="form-control" name="confsenha" id="confsenha" placeholder="Confirme a Senha">
+       
+              
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Cadastrar</button>
+        <button type="submit" class="btn btn-primary">Cadastrar</button> 
       </div>
+          </form>        
+     </div>    
     </div>
   </div>
 </div> 
@@ -111,8 +111,38 @@ and open the template in the editor.
 <!-- |============================================================================================================    -->    
       <!-- MOdal ESQUECEU SENHA   -->   
         
-         
-         
+  <div class="modal fade" id="EsqueceuSenha" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Esqueci minha Senha!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+          <form  action="verifica.php" method="Post">
+  <div class="form-group">
+      <p>Enviaremos uma nova Senha para o Email Digitado:</p>
+             <div class="form-group">
+    <label for="email">Digite o Email desejado:</label>
+    <input type="email" name="emailsenha" class="form-control" id="emailsenha" placeholder="Digite o Email">
+  </div>
+           
+        
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="submit"  class="btn btn-primary" >Enviar</button>
+     </form>  
+      </div>
+              
+    </div>
+  </div>
+</div>        
+        
          
          
          

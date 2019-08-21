@@ -4,7 +4,7 @@ body {
 }
 #al{
     position: absolute;
-    left:45%; 
+    left:38%; 
      top:73%; 
 }
 #esqueceu{
@@ -94,10 +94,7 @@ font: bauhaus 93;
   border-radius: 4rem;
 }
 
-.form-label-group>input,
-.form-label-group>label {
-  padding: var(--input-padding-y) var(--input-padding-x);
-}
+
 
 .form-label-group>label {
   position: absolute;
@@ -134,17 +131,7 @@ font: bauhaus 93;
   color: transparent;
 }
 
-.form-label-group input:not(:placeholder-shown) {
-  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-  padding-bottom: calc(var(--input-padding-y) / 3);
-}
 
-.form-label-group input:not(:placeholder-shown)~label {
-  padding-top: calc(var(--input-padding-y) / 3);
-  padding-bottom: calc(var(--input-padding-y) / 3);
-  font-size: 12px;
-  color: #777;
-}
 
 .btn-google {
   color: white;
@@ -156,14 +143,5 @@ font: bauhaus 93;
   background-color: #3b5998;
 }
 
-/* Fallback for Edge
--------------------------------------------------- */
 
-@supports -(ms-ime-align: auto) {
-  .form-label-group>label {
-    display: none;
-  }
-  .form-label-group input::-ms-input-placeholder {
-    color: #777;
-  }
-}
+

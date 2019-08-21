@@ -2,12 +2,22 @@
  
   $login=$_REQUEST["login"];
   $senha=$_REQUEST["senha"];
-  
-  if(isset($login)&& isset($senha)&& $login=="top"){
-      header('location:Home.php');
+  $emailsenha=$_REQUEST["emailsenha"];
+          
+  if(($login==null)&& ($senha==null)){
+     header('location:index.php?erro1'); 
   } else {
-   header('location:index.php?erro1');    
+    header('location:Home.php');    
 }
+//VERIFICAÇÃO CADASTRO=============================
 
+    
+
+
+//verificação do ESQUECI MINHA SENHA!==================
+if($emailsenha==null){
+   header('location:index.php?erro1'); 
+  } else {
+      header('location:Home.php');   
+}
 ?>
-
