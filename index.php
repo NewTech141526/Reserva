@@ -47,6 +47,7 @@ and open the template in the editor.
               <hr class="my-4" id="cl">
               
               <a href="#" class="card-link" data-toggle="modal" data-target="#EsqueceuSenha" style="color:whitesmoke"  id="esqueceu">Esqueceu Sua Senha?</a>
+              <br>
                  </div>
             </form>
           </div>
