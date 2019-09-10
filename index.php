@@ -8,6 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>ReservaAi.com</title>
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/Estilo.css"
     </head>
@@ -16,7 +17,8 @@ and open the template in the editor.
             <div class="conatainer">
                 
                 <div class="jumbotron"  id="jub"style="background-color:#0066CB" >
-                    <h1 id="intro">Reserva Aí</h1>              
+                    <h1 id="intro">Reserva Aí</h1>
+                    <img src="img/logo.png" id="logo" >
                 </div>
                </div>
         </nav>
@@ -31,15 +33,16 @@ and open the template in the editor.
             <h5 id="login" class="card-title">Login</h5>
             <form class="form-signin"  action="verifica.php" method="post" >
             
-                <p><input type="text" id="usuario" name="login" class="form-control" style="background-color:whitesmoke" placeholder="Digite seu Usuario" required autofocus></p>
-           
-                <p>   <input type="password" id="senha" name="senha" class="form-control" style="background-color:whitesmoke" placeholder="Digite Sua Senha" required></p>
+                <img src="img/user_blue.png" width="40px" id="user">      
+               <p> <input type="text" id="usuario" name="login" class="form-control" style="background-color:whitesmoke" placeholder="Digite seu Usuario" required autofocus></p>
+               <img src="img/key_blue.png" width="40px" id="key" >
+               <p> <input type="password" id="senha" name="senha" class="form-control" style="background-color:whitesmoke" placeholder="Digite Sua Senha" required></p>
                
               </div>
 
               
                
-            <a href="#" class="card-link" data-toggle="modal" data-target="#ExemploModalCentralizado" style="color:whitesmoke " id="al">Cadastrar-se?</a>
+            <a href="#" class="card-link" data-toggle="modal" data-target="#ExemploModalCentralizado" style="color:whitesmoke " id="cadastrar">Cadastrar-se?</a>
                 <button id="btentrar"  type="submit" >Entrar</button>
                  
                 

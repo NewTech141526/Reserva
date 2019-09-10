@@ -1,0 +1,43 @@
+p{
+    background-position: center;
+    font-family: Arial;
+    color: aliceblue;
+    font-size: 30pt;
+
+}
+#check{
+    display: none;
+    margin-right: 0px;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    
+    margin-right: 3px;
+    z-index: 1;
+}
+
+
+.menu{
+   background-color: beige; 
+   height: 100%;
+   position: absolute;
+   width: 300px;
+ 
+}
+
+
+h3{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+ul{
+   opacity: 1;
+   color: aliceblue;
+   margin-top: 20px;
+  
+}
+li{
+    margin-top: 10px;
+}

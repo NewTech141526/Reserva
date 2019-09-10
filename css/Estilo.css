@@ -2,7 +2,22 @@ body {
   background-image: url(../img/teste.png); 
   background-repeat: no-repeat;
 }
-#al{
+#logo{
+    position: absolute;
+    top: 5%;
+     right: 90%;
+}
+#key{
+    position: absolute;
+    right: 88%;
+    top: 52.5%;
+}
+    #user{
+    position: absolute;
+    top: 36.5%;
+    right: 88%;
+}
+#cadastrar{
     position: absolute;
     left:38%; 
      top:73%; 
@@ -32,10 +47,13 @@ font: bauhaus 93;
     
 }
 #usuario{
-    border-radius: 5px;
+    margin-left:5%; 
+    border-radius: 4px;
 }
 #senha{
-    border-radius: 5px;
+    border-radius: 4px;
+     margin-left:5%; 
+
 }
 
 #btentrar{
@@ -142,6 +160,5 @@ font: bauhaus 93;
   color: white;
   background-color: #3b5998;
 }
-
 
 
