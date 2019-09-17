@@ -9,12 +9,15 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/EstiloH.css"
+         <link rel="stylesheet" type="text/css" href="css/EstiloH.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script type="text/javascript"  src="SPA.js"></script>
     </head>
-    <body>
+    <body  ng-spa="Spa">
        <nav class="navbar navbar-dark bg-primary">
- <a class="navbar-brand" href="#">
-     <img src="img/logo.png" width="80" height="30" class="d-inline-block align-top" >
+           <a class="navbar-brand" href="#" id="nav">
+     <img src="img/logo.png" width="64" height="64" class="d-inline-block align-top" >
    
   </a>
   <p>Reaserva aí</p>
@@ -26,14 +29,19 @@ and open the template in the editor.
 <div class="menu">
 <nav >
         <h3>ETE Gil Rodrigues </h3>
+        
   <ul> 
       
-      <li><a href="Cp">Cadastrar professores</a></li>
-      <li><a href="Ch">Criar horários</a></li>
-      <li><a href="Vr">Verificar reservas</a></li>
+      <li><a href="/p1">Cadastrar professores</a></li>
+      <li><a href="/p2">Criar horários</a></li>
+      <li><a href="/p3">Verificar reservas</a></li>
   </ul>
+        
 </nav>
 </div>
-
+        
+            
+            <div ng-view> </div>
+       
     </body>
 </html>

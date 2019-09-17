@@ -1,25 +1,37 @@
 p{
     background-position: center;
     font-family: Arial;
-    color: aliceblue;
+    color:#FFFFFF;
     font-size: 30pt;
 
+}
+#nav{
+   
+}
+*{
+    
+}
+ul{
+   
+  
+   margin-top: 20px;
+  
 }
 #check{
     display: none;
     margin-right: 0px;
 }
 #icone{
+    opacity: 1;
     cursor: pointer;
-    padding: 15px;
-    
+    padding: 15px;   
     margin-right: 3px;
     z-index: 1;
 }
 
 
 .menu{
-   background-color: beige; 
+   background-color:#E4E4E4; 
    height: 100%;
    position: absolute;
    width: 300px;
@@ -32,12 +44,7 @@ h3{
     margin-top: 10px;
 }
 
-ul{
-   opacity: 1;
-   color: aliceblue;
-   margin-top: 20px;
-  
-}
+
 li{
     margin-top: 10px;
 }

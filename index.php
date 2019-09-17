@@ -18,7 +18,7 @@ and open the template in the editor.
                 
                 <div class="jumbotron"  id="jub"style="background-color:#0066CB" >
                     <h1 id="intro">Reserva Aí</h1>
-                    <img src="img/logo.png" id="logo" >
+                    <img src="img/logo.png"width="70px" id="logo" >
                 </div>
                </div>
         </nav>
@@ -127,9 +127,9 @@ and open the template in the editor.
           
           <form  action="verifica.php" method="Post">
   <div class="form-group">
-      <p>Enviaremos uma nova Senha para o Email Digitado:</p>
+      
              <div class="form-group">
-    <label for="email">Digite o Email desejado:</label>
+    <label for="email">Digite seu email registrado:</label>
     <input type="email" name="emailsenha" class="form-control" id="emailsenha" placeholder="Digite o Email">
   </div>
            
